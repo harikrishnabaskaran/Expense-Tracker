@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(223, 174, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 174, 196, 0.8354692218684349) 0%,
+    rgba(148, 187, 233, 0.5665616588432247) 100%
+  );
+}
+
+h2 {
+  margin: 0;
+  border-bottom: 1px solid rgb(45, 11, 11);
+}
+
+.main-heading {
+  font-weight: bold;
+}
+
+#balance {
+  font-weight: bold;
+}
+
+.container {
+  margin: 20px auto;
+  width: 360px;
+  border: 1px solid rgba(0, 0, 0, 0.183);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+h3 {
+  border-bottom: 1px solid rgba(30, 3, 3, 0.776);
+  padding-bottom: 5px;
+  margin: 14px 0 5px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.income-expense-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: rgba(255, 245, 245, 0.881);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+}
+
+.income-expense-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.income-expense-container > div:first-of-type {
+  border-right: 2px solid #1b141498;
+}
+
+.mp1 {
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.mp2 {
+  padding: 1px;
+  border-radius: 2px;
+}
+
+.money {
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: green;
+  font-weight: bold;
+}
+
+.money.minus {
+  color: red;
+  font-weight: bold;
+}
+
+label {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="number"] {
+  border: 1px solid rgb(23, 21, 21);
+  display: block;
+  background-color: aliceblue;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.labeltext {
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+
+.labelamount {
+  font-size: smaller;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+
+input::selection {
+  background-color: yellow;
+  color: black;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid rgb(3, 9, 17);
+  background-color: rgba(2, 39, 54, 0.76);
+  color: rgba(255, 255, 255, 0.79);
+  cursor: pointer;
+  display: block;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0 30px;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+
+.btn:hover {
+  background-color: rgba(3, 20, 27, 0.76);
+  color: whitesmoke;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  padding: 2px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  margin: 2px 10px 5px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.849);
+  box-shadow: rgba(0, 0, 0, 0.516) 0px 1px 4px;
+}
+
+.delete-btn {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: rgb(93, 11, 11);
+  border: none;
+  background-color: rgba(224, 224, 224, 0.673);
+  transition: 0.2s all;
+}
+
+.delete-btn:hover {
+  color: rgb(222, 10, 10);
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: none;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+.list li.plus {
+  border-right: 5px solid green;
+}
+
+.list li.minus {
+  border-right: 5px solid red;
+}
+
+.inrspan {
+  font-size: small;
+}
