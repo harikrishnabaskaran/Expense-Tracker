@@ -11,6 +11,3 @@ This is a simple expense tracker project. This project is built with HTML CSS an
 (02) Desktop or Laptop view
 ![Screenshot (2158)](https://user-images.githubusercontent.com/88100576/201474550-3015cc00-6deb-4db7-80c3-210e4f554eb1.png)
 
-
-## Created By
-Arup Mondal [@mondalCodeHub](https://www.github.com/mondalCodeHub)
